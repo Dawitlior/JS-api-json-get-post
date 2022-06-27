@@ -11,6 +11,7 @@ async function getTheMovie() {
 }
 
 async function sendTheMovie() {
+  try {
   const data = {
     movie: {
       image: input.value,
@@ -20,16 +21,15 @@ async function sendTheMovie() {
       synopsis: input4.value,
     },
   };
-  try {
-    await fetch("https://moviesmern.herokuapp.com/movies/saveMovie", {
+   return await fetch("https://moviesmern.herokuapp.com/movies/saveMovie", {
       method: "POST",
       body: JSON.stringify(data),
       headers: { "content-type": "application/json" },
     });
-  } catch (error) {
-    alert("sorry about the error");
-  } finally {
-  }
+  } 
+  catch (error) {
+    alert("sorry about the error");} 
+  finally {}
 }
 
 function printNamesToScreen() {
