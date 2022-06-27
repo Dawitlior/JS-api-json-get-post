@@ -14,9 +14,23 @@
       </tbody>
     </table>
     <div id="div10"></div>
-    <button onclick="postTheMovie()" id="my_btn">Send</button>
+    <button onclick="sendTheMovie()" id="my_btn">Send</button>
     <button onclick="printNamesToScreen()" id="my_btn1">Show</button>
-    <div id="id_div1"></div>
+
+    <form oninput=""  id="id">
+      <input placeholder="type image link" id="input" type="text" />
+      <input type="text" id="input1" placeholder="type Link" />
+      <input id="input2" placeholder="type Movie Name" type="text" />
+      <input id="input3" placeholder="type Rating Movie" type="number" />
+      <input id="input4" type="text" placeholder="type synopsis" />
+      <input oninput="" placeholder="type name movie" type="text" id="searchMovies" />
+      <button onclick="printNamesToScreen()" id="btn_new">Search Movie</button>
+    </form>
+
+    <div id="div_id">
+      
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
