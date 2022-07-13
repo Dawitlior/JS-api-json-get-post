@@ -28,7 +28,7 @@ async function sendTheMovie() {
     });
   } 
   catch (error) {
-    alert("sorry about the error");} 
+    alert(error);} 
   finally {}
 }
 
